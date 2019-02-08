@@ -36,7 +36,7 @@
 	<div class="sidenav">
 		<p class = "sidebar-sections">Staff Management</p>
 		<a href="./staff.html" onclick="">Staff Records</a>
-		<a href="./staffduties.html" onclick="">Staff Duties</a>
+		<a href="./staff.html" onclick="">Staff Duties</a>
 		<p class = "sidebar-sections">Room Management</p>
 		<a href="./rooms.html" onclick="">Room Booking</a>
 		<a href="./rooms.html" onclick="">Room Details</a>
@@ -55,7 +55,8 @@
 		<div class="card-div left">
 			<h5>Generate a Report</h5><br>
 			<select id="doctype">
-				<option selected>List of Rooms and their statuses</option>
+				<option disabled selected>Select your report type</option>
+				<option>List of Rooms and their statuses</option>
 				<option>List of Guests in individual rooms</option>
 				<option>List of Guests in all occupied rooms</option>
 				<option>Total room occupancy - Statistics</option>
@@ -68,7 +69,8 @@
 			<button onclick="redirect()">Preview</button>
 			<button onclick="goEdit()">Edit</button><br><br>
 			<select id="printer">
-				<option selected>Printer 1-A</option>
+				<option disabled selected>Select a printer to use</option>
+				<option>Printer 1-A</option>
 				<option>Printer 1-B</option>
 				<option>Printer 1-C</option>
 				<option>Printer 2-A</option>
@@ -80,7 +82,8 @@
 		<div class="card-div middle">
 			<h5>Report Generation Schedules</h5><br>
 			<select id="doctype-2">
-				<option selected>List of Rooms and their statuses</option>
+				<option disabled selected>Select your report type</option>
+				<option>List of Rooms and their statuses</option>
 				<option>List of Guests in individual rooms</option>
 				<option>List of Guests in all occupied rooms</option>
 				<option>Total room occupancy - Statistics</option>
@@ -88,7 +91,8 @@
 			</select><br>
 			<img src="./assets/images/report.png" class="report-img"><br>
 			<select id="regularity">
-				<option selected>Hourly</option>
+				<option disabled selected>Choose the regularity of generation</option>
+				<option>Hourly</option>
 				<option>Daily</option>
 				<option>Monthly</option>
 				<option>Annually</option>

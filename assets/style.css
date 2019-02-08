@@ -1,0 +1,159 @@
+body {
+    font-family: "Helvetica", sans-serif;
+    background: #f2f2f2;
+}
+
+input {
+  text-align: center;
+  border: 1px solid #252525;
+  border-radius: 5px;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 180px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    margin-top: 44px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    text-align: center;
+  }
+
+  .sidebar-sections {
+    padding: 6px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    text-align: center;
+    border-top: 1px solid #818181;
+    border-bottom: 1px solid #818181;
+    margin: 10px 0;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #b4b4b4;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+  .navbar {
+    font-size: 16px;
+    padding: 2px;
+    color: #818181;
+    list-style-type: none;
+    position: fixed;
+    z-index: 10;
+    background-color: #252525;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+}
+
+.navbar-brand {
+  color: #818181;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.navbar-brand:hover {
+  color: #b4b4b4;
+}
+
+.navbar li {
+    margin: 0 20px;
+    padding: 2px 5px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #818181;
+}
+
+.navbar li a:hover {
+  color: #b4b4b4;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #929292; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b6b6b; 
+}
+
+a {
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid #111;
+}
+
+.card-div {
+    position: fixed;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #111;
+    text-align: center;
+    top: 52%;
+    height: 620px;
+}
+
+.left {
+  left: 30%;
+}
+
+.right {
+  left: 82%;
+}
+
+.middle {
+  left: 58%;
+}
+
+.report-img {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #111;
+  height: 200px;
+  width: 200px;
+}
+
+.stafftable{
+  width: 100%; 
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}

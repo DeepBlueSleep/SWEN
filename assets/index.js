@@ -69,3 +69,29 @@ function saveEdits() {
 function goEdit() {
     window.location.href = "./editreport.html"
 }
+
+function submitBooking() {
+    var roomtype = document.getElementById("roomtype").value;
+    var payment = document.getElementById("payment").value;
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var dob = document.getElementById("dob").value;
+    var address = document.getElementById("address").value;
+    var phone = document.getElementById("phone").value;
+    var childnum = document.getElementById("childnum").value;
+    var adultnum = document.getElementById("adultnum").value;
+    var checkindate = document.getElementById("checkindate").value;
+    var checkoutdate = document.getElementById("checkoutdate").value;
+    var cardname = document.getElementById("cardname").value;
+    var cardnum = document.getElementById("cardnum").value;
+    var expdate = document.getElementById("expdate").value;
+
+    if (roomtype == "" || payment == "" || fname == "" || lname == "" || dob == "" ||
+        address == "" || phone == "" || childnum == "" || adultnum == "" ||
+        checkindate == "" || checkoutdate == "" || cardname == "" || cardnum == "" || expdate == "") {
+            alert("One or more fields are empty")
+        }
+    else {
+        alert("Booking has successfully been made!")
+    }
+}

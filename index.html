@@ -1,0 +1,75 @@
+<!DOCTYPE html lang="en">
+
+<html>
+<head>
+
+	<!--metadata-->
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<meta name = "name" content = "SWEN">
+	<meta name = "description" content = "SWEN Hotel Management System">
+
+	<title>Delonix Regia Hotel Management System</title>
+
+	<!--style links-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  	<link href = "https://fonts.googleapis.com/css?family=Noto+Sans+SC|Helvetica" rel = "stylesheet">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href = "assets/style.css" rel = "stylesheet">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-toggleable-md navbar-default bg-default">
+		<a class="navbar-brand" href="#">Hotel Management System</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+					<li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+				</ul>
+			</div>
+	</nav>
+
+	<div class="sidenav">
+		<p class = "sidebar-sections">Staff Management</p>
+		<a href="./staff.html" onclick="">Staff Records</a>
+		<a href="./staffduties.html" onclick="">Staff Duties</a>
+		<p class = "sidebar-sections">Room Management</p>
+		<a href="./rooms.html" onclick="">Room Booking</a>
+		<a href="./rooms.html" onclick="">Room Details</a>
+		<a href="./rooms.html" onclick="">Room Occupancy</a>
+		<p class = "sidebar-sections">Reports Management</p>
+		<a href="./reports.html" onclick="">Generate Report</a>
+		<a href="./reportdb.html" onclick="">Edit Report</a>
+		<p class = "sidebar-sections">User Account Management</p>
+		<a href="./users.html" onclick="">Edit Account Details</a>
+		<a href="./users.html" onclick="">Account Creation</a>
+		<a href="./users.html" onclick="">Account Database</a>
+		
+	</div>
+	
+	<div id = "main">
+		<div class="card-div middle center">
+			<h1>Welcome to the Delonix Regia Hotel Management System!</h1><br>
+			<h5>Developed by students from Temasek Polytechnic</h5>
+			<br><br>
+			<h6>Quick Links</h6><br><br>
+			<div class="quicklinks">
+				<a href="./staff.html" onclick=""><i class="fa fa-clipboard"></i> Staff Management Module</a><br><br>
+				<a href="./rooms.html" onclick=""><i class="fa fa-bed"></i> Room Management Module</a><br><br>
+				<a href="./reports.html" onclick=""><i class="fa fa-file"></i> Reports Management Module</a><br><br>
+				<a href="./users.html" onclick=""><i class="fa fa-user"></i> User Account Management Module</a>
+			</div>
+		</div>
+</div>
+
+</body>
+
+<script src = "https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity = "sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin = "anonymous"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity = "sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin = "anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+<script src = "assets/index.js"></script>
+
+</html>

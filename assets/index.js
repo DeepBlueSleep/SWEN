@@ -9,6 +9,20 @@ var config = {
 };
 firebase.initializeApp(config);
 
+var Ref = firebase.database().ref("ListOfStaff");
+	Ref.on("value", function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+        var childData = childSnapshot.val();
+        var id = childData.StaffID;
+        var sname = childData.StaffName;
+        var dob = childData.StaffDoB;
+
+        $("#id").append(id);
+        $("#name").append(sname);
+        $("dob").append(dob);
+		});
+});
+
 var search = document.getElementById("search");
 
 search.addEventListener("keyup", function(event) {

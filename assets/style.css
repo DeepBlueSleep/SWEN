@@ -136,6 +136,21 @@ textarea {
   left: 30%;
 }
 
+.list {
+  overflow: auto;
+}
+
+.list th {
+  color: white;
+  background: #b4b4b4;
+}
+
+.list th, .list td {
+  padding: 10px 80px;
+  border: 1px solid #111;
+  text-align: center;
+}
+
 .right {
   left: 82%;
 }

@@ -1,0 +1,113 @@
+<!DOCTYPE html lang="en">
+
+<html>
+<head>
+
+	<!--metadata-->
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<meta name = "name" content = "SWEN">
+	<meta name = "description" content = "SWEN Hotel Management System">
+
+	<title>Delonix Regia Hotel Management System</title>
+
+	<!--style links-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  	<link href = "https://fonts.googleapis.com/css?family=Noto+Sans+SC|Helvetica" rel = "stylesheet">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href = "assets/style.css" rel = "stylesheet">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-toggleable-md navbar-default bg-default">
+		<a class="navbar-brand" href="./index.html">Hotel Management System</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li><input type="text" name="search" id="search size="40" autocomplete="off" placeholder="Search for a staff member by their ID"/></li>
+					<li><a href="./settings.html"><i class="fa fa-cog"></i> Settings</a></li>
+					<li><a href="./login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+				</ul>
+			</div>
+	</nav>
+
+	<div class="sidenav">
+		<p class = "sidebar-sections">Staff Management</p>
+		<a href="./staff.html" onclick="">Staff Records</a>
+		<a href="./staffduties.html" onclick="">Staff Duties</a>
+		<p class = "sidebar-sections">Room Management</p>
+		<a href="./rooms.html" onclick="">Room Booking</a>
+		<a href="./rooms.html" onclick="">Room Details</a>
+		<a href="./rooms.html" onclick="">Room Occupancy</a>
+		<p class = "sidebar-sections">Reports Management</p>
+		<a href="./reports.html" onclick="">Generate Report</a>
+		<a href="./reportdb.html" onclick="">Report Database</a>
+		<p class = "sidebar-sections">User Account Management</p>
+		<a href="./users.html" onclick="">Edit Account Details</a>
+		<a href="./users.html" onclick="">Account Creation</a>
+		<a href="./users.html" onclick="">Account Database</a>
+		
+	</div>
+
+	<div class = "main">
+		<p style="padding-top: 60px;padding-left: 20px;" id="test">
+		</p>
+	</div>
+
+</body>
+
+<script src = "https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity = "sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin = "anonymous"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity = "sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin = "anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+<script src = "assets/index.js"></script>
+<script>
+	var data = {StaffID: "0012", StaffName: "Tom", Dob:"1/1/1990", BankAccount:"123456",HomeAddress:"Blk 123 Tampines Street 21 #12-34",PhoneNumber:"6512 3456",Email:"tom@gmail.com",Remarks:""};
+	var data2 = {StaffID: "0013", StaffName: "Tom", Dob:"1/1/1990", BankAccount:"123456",HomeAddress:"Blk 123 Tampines Street 21 #12-34",PhoneNumber:"6512 3456",Email:"tom2@gmail.com",Remarks:""};
+	var staff = [data, data2];
+	var text="<table class='stafftable'>\
+				<tr>\
+					<th>\
+						Staff ID\
+					</th>\
+					<th>\
+						Staff Name\
+					</th>\
+					<th>\
+						Date of Birth\
+					</th>\
+					<th>\
+						Bank Account\
+					</th>\
+					<th>\
+						Home address\
+					</th>\
+					<th>\
+						Phone Number\
+					</th>\
+					<th>\
+						Staff Email\
+					</th>\
+					<th>\
+						Remarks\
+					</th>\
+				</tr>";
+	for (let index = 0; index < staff.length; index++) {
+		text += "<tr>";
+		text += "<td>"+ staff[index].StaffID + "</td>"
+		text += "<td>"+ staff[index].StaffName + "</td>"
+		text += "<td>"+ staff[index].Dob + "</td>"
+		text += "<td>"+ staff[index].BankAccount + "</td>"
+		text += "<td>"+ staff[index].HomeAddress + "</td>"
+		text += "<td>"+ staff[index].PhoneNumber + "</td>"
+		text += "<td>"+ staff[index].Email + "</td>"
+		text += "<td>"+ staff[index].Remarks + "</td>"
+		text += "</tr>";
+	}
+	text +="</table>"
+	document.getElementById("test").innerHTML = text;
+	
+	
+</script>
+</html>
